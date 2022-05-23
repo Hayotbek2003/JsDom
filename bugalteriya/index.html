@@ -4,29 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
+        <div>
         <h1>budget up</h1>
         <div class="column1">
             <div class="card card1">
                     <h3>Place anter your butget</h3>
-                    <input type="text">
-                    <button>Calculate</button>
+                    <input type="text" class="budget">
+                    <button onclick="save('budget')">Calculate</button>
             </div>
             <div class="card card2">
                 <h3>Please enter your expense</h3>
-                <input type="text">
+                <input type="text" class="exname">
                 <h3>Please enter Expense amount</h3>
-                <input type="text">
-                <button>Add Expense</button>
+                <input type="text" class="mount">
+                <button onclick="save('expense')">AddExpense</button>
             </div>
 
         </div>
+        </div>
         <div class="column2">
+               <div class="row">
+                   <div class="r-column1">
+                       <h2>Budget</h2>
+                       <i class="fa-solid fa-money-bill-1"></i>
+                       <div style="display: flex;font-size: 25px;">$ <h1 class=" but">5</h1></div>
+                   </div>
+                   <div class="r-column2">
+                       <h2>Expenses</h2>
+                       <i class="fa-solid fa-money-check"></i>
+                       <div style="display: flex;font-size:25px;">$<h1 class="hred"></h1></div>
+                   </div>
+                   <div class="r-column3">
+                        <h2>Balance</h2>
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <div style="display:flex;font-size:25px;">$<h1 class="h1">0</h1></div>
+                   </div>
+               </div>
 
+
+               <div class="row2">
+
+                    <ul>
+                        <li class="li">Expense title</li>
+                    </ul>
+                    <ul>
+                        <li class="li">Expense Value</li>
+                    </ul>
+                    <ul>
+                        <li class="li">....</li>
+                    </ul>
+               </div>
         </div>
     </div>
 

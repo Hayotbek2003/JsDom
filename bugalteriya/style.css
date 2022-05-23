@@ -9,6 +9,9 @@
     width: 1440px;
     padding: 50px 7%;
     height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: ; */
 }
 .column1{
     display: flex;
@@ -42,4 +45,38 @@ button, input{
 .card2 input,
 .card2 button{
 border: 2px solid rgb(136, 10, 10);
+}
+.hred{
+    color: red;
+}
+.h1,.but{
+    color: green;
+}
+.row{width: 60%;
+    display: flex;
+    gap: 100px;
+}
+/* .r-column1,
+.r-column2,
+.r-column3{
+   display: flex;
+   jus
+} */
+i{
+    font-size: 40px;
+    margin: 20px;
+}
+
+.row2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.li{
+    margin-bottom: 40px;
+    color: black;
+}
+li{
+    color: red;
+    margin: 5px 0;
 }
