@@ -11,6 +11,7 @@
     height: 100vh;
     display: flex;
     justify-content: space-between;
+    gap: 50px;
     /* align-items: ; */
 }
 .column1{
@@ -54,6 +55,7 @@ border: 2px solid rgb(136, 10, 10);
 }
 .row{width: 60%;
     display: flex;
+    /* flex-wrap: wrap; */
     gap: 100px;
 }
 /* .r-column1,
@@ -68,15 +70,26 @@ i{
 }
 
 .row2{
+    /* flex-wrap: wrap; */
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 200px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    
 }
 .li{
     margin-bottom: 40px;
     color: black;
 }
 li{
+    color: red;
+    margin: 5px 0;
+}
+.div a{
     color: red;
     margin: 5px 0;
 }

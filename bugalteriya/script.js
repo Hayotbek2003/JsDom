@@ -4,18 +4,32 @@ let mount = document.querySelector(".mount")
 let but = document.querySelector(".but")
 let hred = document.querySelector(".hred")
 let h1 = document.querySelector(".h1")
+
+
 function save(state){
     if(state == "budget"){
-    let s = but.textContent + budget.value
-    but.innerHTML = s
+    let bud = parseInt(but.textContent) + parseInt(budget.value)
+    but.innerHTML = bud
     }
     else if(state == "expense"){
-       let hre = hred.textContent + mount.value
-       but - hre
-        //  h1.innerHTML = but -hred
-        console.log(hred)
-           
-      let li = document.createElement("li")
-    //   li.innerHTML = 
+       let mou = parseInt(hred.textContent) + parseInt(mount.value)
+    hred.innerHTML = mou
+         
+      let res =  parseInt(but.textContent) - parseInt(hred.textContent)
+
+    h1.innerHTML = res
+
+    
+let ul = document.querySelector(".ul")
+let div = document.querySelector(".div")
+    let li = document.createElement("li")
+    let a = document.createElement("a")
+    ul.appendChild(li)
+    li.innerHTML = exname.value
+    div.appendChild(a)
+     a.innerHTML = mount.value
+
+
+
     }
 }
